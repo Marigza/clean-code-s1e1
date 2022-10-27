@@ -45,12 +45,12 @@
 
 .main-list__item, 
 .main-header {
-  list-style: none;
+  list-style-type: none;
 }
 
 .input-checkbox,
 .input-text, 
-.button{
+.button {
   outline: none;
 }
 
