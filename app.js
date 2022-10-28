@@ -87,7 +87,7 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".button_edit");
-    var containsClass = listItem.classList.contains("main-list__item_editMode");
+    var containsClass = editInput.classList.contains("main-list__item_editMode");
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -101,7 +101,8 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("main-list__item_editMode");
+    editInput.classList.toggle("main-list__item_editMode");
+    label.classList.toggle("label_task-edit-mode");
 };
 
 
@@ -124,6 +125,7 @@ var taskCompleted=function(){
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
     completedTasksHolder.appendChild(listItem);
+    completedTasksHolder.className = "main-list_completed-tasks"
     bindTaskEvents(listItem, taskIncomplete);
 
 }
