@@ -81,6 +81,7 @@
 }
 
 .input-text {
+  display: none;
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -104,6 +105,7 @@
 }
 
 .input-text_new-task {
+  display: inline-block;
   width: 318px;
 }
 
@@ -117,11 +119,11 @@
   align-items: center;
 }
 
-.main-list__item > * {
+/*.main-list__item > * {
   vertical-align: middle;
-}
+}*/
 
-.main-list__item > .input-checkbox {
+/*.main-list__item > */.input-checkbox {
   margin: 0 10px;
 }
 
@@ -135,7 +137,7 @@
   width: 226px;
 }
 
-.main-list__item > .input-text {
+/*.main-list__item >*/ .input-text {
   width: 226px;
 }
 
@@ -150,17 +152,17 @@
 }
 
 /* Completed */
-.label_task-completed {
+.main-list_completed-tasks {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.main-list__item .input-text {
+/*.main-list__item .input-text {
   display: none;
-}
+}*/
 
-.main-list__item_editMode .input-text {
+.main-list__item_editMode {
   display: inline-block;
   width: 224px;
 }
