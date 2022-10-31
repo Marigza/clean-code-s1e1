@@ -34,7 +34,7 @@
   margin: 0 auto 0;
 }
 
-.task-row-wrapper {
+.wrapper {
   display: flex;
 }
 
@@ -141,13 +141,13 @@
   width: 226px;
 }
 
-.button_delete-img {
+.button__img_delete {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button_delete-img:hover {
+.button__img_delete:hover {
   transform: rotateZ(0);
 }
 
@@ -162,11 +162,11 @@
   display: none;
 }*/
 
-.main-list__item_editMode {
+.main-list__item_edit-mode {
   display: inline-block;
   width: 224px;
 }
 
-.label_task-edit-mode {
+.label_task_edit-mode {
   display: none;
 }

@@ -10,7 +10,7 @@
 
 var taskInput=document.getElementById("new-task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #incompleteTasks
+var incompleteTaskHolder=document.getElementById("incomplete-tasks");//ul of #incompleteTasks
 var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
 
@@ -46,7 +46,7 @@ var createNewTaskElement=function(taskString){
 
     deleteButton.className="button button_delete";
     deleteButtonImg.src = './remove.svg';
-    deleteButtonImg.className ="button_delete-img"
+    deleteButtonImg.className ="button__img_delete"
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -87,7 +87,7 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".button_edit");
-    var containsClass = editInput.classList.contains("main-list__item_editMode");
+    var containsClass = editInput.classList.contains("main-list__item_edit-mode");
     //If class of the parent is .editmode
     if(containsClass){
 
@@ -101,8 +101,8 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
-    editInput.classList.toggle("main-list__item_editMode");
-    label.classList.toggle("label_task-edit-mode");
+    editInput.classList.toggle("main-list__item_edit-mode");
+    label.classList.toggle("label_task_edit-mode");
 };
 
 
