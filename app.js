@@ -37,7 +37,8 @@ var createNewTaskElement=function(taskString){
     label.className='label_task';
 
     //Each elements, needs appending
-    checkBox.type="checkbox";
+    checkBox.type = "checkbox";
+    checkBox.className = "input-checkbox";
     editInput.type="text";
     editInput.className ="input-text";
 
@@ -125,7 +126,7 @@ var taskCompleted=function(){
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
     completedTasksHolder.appendChild(listItem);
-    completedTasksHolder.className = "main-list_completed-tasks"
+    completedTasksHolder.className = "main-list main-list_completed-tasks"
     bindTaskEvents(listItem, taskIncomplete);
 
 }
