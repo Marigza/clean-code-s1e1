@@ -147,8 +147,12 @@
 
 /* Completed */
 .main-list_completed-tasks {
-  text-decoration: line-through;
+  /*text-decoration: line-through;*/
   color: #888;
+}
+
+.main-list_completed-tasks .label_task {
+  text-decoration: line-through;
 }
 
 .main-list__item_edit-mode {
